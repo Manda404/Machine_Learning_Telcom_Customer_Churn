@@ -58,6 +58,6 @@ Machine_Learning_Telcom_Customer_Churn/
 
 ---
 
-✨ **Auteur** : Rostand Surel
+✨ **Auteur** : Rostand Surel/
 📅 **Date de création** : Mars 2025
 =======
