@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Machine Learning Telcom Customer Churn
 
 ## 📌 Objectif du Projet
@@ -60,3 +61,7 @@ Machine_Learning_Telcom_Customer_Churn/
 
 ✨ **Auteur** : [Ton Nom]\
 📅 **Date de création** : Mars 2025
+=======
+# Machine_Learning_Telcom_Customer_Churn
+Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs.
+>>>>>>> 705fba48525622e6c079a7059f88dd3a80f42b7f
