@@ -95,4 +95,4 @@ Machine_Learning_Telcom_Customer_Churn/
 
 👤 **Réalisé par** : [Rostand Surel](https://www.linkedin.com/in/rostand-surel/)  
 📌 **GitHub** : [Manda404](https://github.com/Manda404)
-📚 **Licence** : [MIT](https://github.com/Manda404/Ch
+📚 **Licence** : [MIT](https://github.com/Manda404/Ch)
