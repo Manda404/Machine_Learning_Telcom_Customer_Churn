@@ -25,19 +25,54 @@ Ce projet permet d'explorer et d'apprendre les techniques de modélisation préd
 - **Pandas, NumPy** pour le traitement des données
 - **Scikit-learn, XGBoost, CatBoost** pour la modélisation
 - **Matplotlib, Seaborn** pour la visualisation
-- **FastAPI** (optionnel) pour exposer un modèle via une API
+- **FastAPI** pour exposer un modèle via une API
+- **Optuna** pour l'optimisation des hyperparamètres
+- **GitHub Actions** pour l'intégration et le déploiement continus
 
-## 📂 Structure du Projet
+## 📂 Architecture du Projet
 
 ```
 Machine_Learning_Telcom_Customer_Churn/
-│── data/                # Contient le dataset brut et transformé
-│── notebooks/           # Notebooks d'analyse exploratoire et de modélisation
-│── src/                 # Code source pour le preprocessing et le modèle
-│── tests/               # Tests unitaires pour valider les fonctions
-│── requirements.txt     # Dépendances Python du projet
-│── README.md            # Documentation du projet
-│── .gitignore           # Fichiers à exclure du versionnement Git
+│── data/                         # Contient le dataset brut et transformé
+│   ├── raw/                      # Fichiers bruts non modifiés
+│   ├── processed/                 # Données prétraitées
+│
+│── src/                          # Code source du projet
+│   ├── preprocessing/             # Fonctions de nettoyage et preprocessing
+│   │   ├── __init__.py
+│   │   ├── data_cleaning.py       # Nettoyage des données
+│   │   ├── feature_engineering.py # Feature engineering avancé
+│   │   ├── feature_selection.py   # Sélection de features avec SHAP & Permutation
+│   │
+│   ├── models/                    # Implémentation des modèles
+│   │   ├── __init__.py
+│   │   ├── train.py               # Entraînement des modèles avec logging
+│   │   ├── optimize.py            # Optimisation avec Optuna
+│   │   ├── evaluation.py          # Évaluation des modèles
+│   │
+│   ├── utils/                     # Fonctions utilitaires
+│   │   ├── __init__.py
+│   │   ├── logger.py              # Logger centralisé
+│   │
+│   ├── api/                       # API pour exposer le modèle
+│   │   ├── __init__.py
+│   │   ├── main.py                # API avec FastAPI
+│
+│── tests/                         # Tests unitaires
+│   ├── test_preprocessing.py      # Tests pour le preprocessing
+│   ├── test_feature_engineering.py # Tests pour le feature engineering
+│   ├── test_model_training.py     # Tests pour l'entraînement
+│
+│── notebooks/                     # Explorations et analyses
+│   ├── EDA.ipynb                  # Analyse exploratoire des données
+│   ├── Model_Training.ipynb       # Test des modèles en notebook
+│
+│── config.yaml                     # Configuration des hyperparamètres
+│── requirements.txt                 # Dépendances Python
+│── Dockerfile                       # Dockerisation du projet
+│── .github/workflows/ci-cd.yml      # Pipeline CI/CD sur GitHub Actions
+│── README.md                        # Documentation du projet
+│── .gitignore                        # Exclusion des fichiers inutiles
 ```
 
 ## 📌 Comment Utiliser ce Projet ?
@@ -46,7 +81,7 @@ Machine_Learning_Telcom_Customer_Churn/
    ```sh
    pip install -r requirements.txt
    ```
-2. **Exécuter l'analyse exploratoire et la modélisation** avec les notebooks.
+2. **Exécuter l’analyse exploratoire et la modélisation** avec les notebooks.
 3. **Tester les performances du modèle** sur l’ensemble de test.
 4. **Déployer le modèle** avec FastAPI (optionnel).
 
@@ -58,6 +93,6 @@ Machine_Learning_Telcom_Customer_Churn/
 
 ---
 
-✨ **Auteur** : Rostand Surel/
-📅 **Date de création** : Mars 2025
-=======
+👤 **Réalisé par** : [Rostand Surel](https://www.linkedin.com/in/rostand-surel/)  
+📌 **GitHub** : [Manda404](https://github.com/Manda404)
+📚 **Licence** : [MIT](https://github.com/Manda404/Ch
